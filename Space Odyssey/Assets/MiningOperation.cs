@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class MiningOperation : MonoBehaviour
 {
-    public PlayerManager PlayerManager;
+    public PlayerManager playerManager;
 
     public Slider slider;
 
@@ -27,10 +29,11 @@ public class MiningOperation : MonoBehaviour
 
     public void onLanceOperation()
     {
-        miningForce = (int) slider.value;
-        
-        
-        
+        miningForce = ((int) slider.value) * Random.Range(1, 3);
+        for (int i = 0; i <= miningForce; i++)
+        {
+            playerManager.MineRessource();
+        }
     }
 
 

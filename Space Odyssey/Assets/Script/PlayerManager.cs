@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Script;
 using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class PlayerManager : MonoBehaviour
     public SlotItemToMove SlotItemToMove;
     public bool isOcuped = false;
     private bool IsOnAnimationInvantaire = false;
+
+    public NotificationManager notificationManager;
     
     private void Awake()
     {
@@ -73,6 +76,7 @@ public class PlayerManager : MonoBehaviour
             else
             {
                 Debug.Log("Plus de Carburant");
+                notificationManager.newNotification(NotificationType.INFORMATION, "plus de carburant a disposition");
             }
         }
         else
@@ -86,19 +90,14 @@ public class PlayerManager : MonoBehaviour
     {
         if (Inventaire.Count >= MaxItemSpace)
         {
-            if (!IsOnAnimationInvantaire)
-            {
-                IsOnAnimationInvantaire = true;
-                objtoDelete = Instantiate(animInventairPleinObj);
-                Invoke("StopAnimObj", 2f);
-            }
+            notificationManager.newNotification(NotificationType.INVENTAIREPLEIN);
             return false;
         }
         else
         {
             Inventaire.Add(item);
-            inventoryAction.Enqueue(new AnimItem(item, true));
-            QueuManager();
+            
+            notificationManager.newNotification(new AnimItem(item, true));
             OnInventoryChangeCallBack?.Invoke();
             return true;
 
@@ -113,8 +112,9 @@ public class PlayerManager : MonoBehaviour
             Item oldItem = ScriptableObject.CreateInstance<Item>();
             oldItem.name = item.name;
             oldItem.icon = item.icon;
-            inventoryAction.Enqueue(new AnimItem(oldItem, false));
-            QueuManager();
+            
+            notificationManager.newNotification(new AnimItem(oldItem, false));
+
             Inventaire.Remove(item);
             OnInventoryChangeCallBack?.Invoke();
             return true;
@@ -126,43 +126,7 @@ public class PlayerManager : MonoBehaviour
 
         }
     }
-
-   
-
-    public void QueuManager()
-    {
-        while (inventoryAction.Count != 0 && !isOcuped)
-        {
-
-            AddRemoveAnimation(inventoryAction.Dequeue());
-        }
-
-    }
-
-    public void AddRemoveAnimation(AnimItem elem)
-    {
-        isOcuped = true;
-        Invoke("StopAnim", 1f); 
-        GameObject animObjelem = Instantiate(animItemObj);
-        animObjelem.GetComponent<AnimObjScript>().myItem = elem.Item;
-        animObjelem.GetComponent<AnimObjScript>().isAdded = elem.isAdded;
-    }
     
-
-
-    public void StopAnim()
-    {
-        isOcuped = false;
-        QueuManager();
-    }
-
-
-    public void StopAnimObj()
-    {
-        IsOnAnimationInvantaire = false;
-        Destroy(objtoDelete);
-    }
-
     [Header("Player Carcateristique")]
     public float Vie;
     public float MaxVie;
@@ -176,18 +140,5 @@ public class PlayerManager : MonoBehaviour
     public int MaxItemSpace;
     public Item[] ressourceminable;
 
-
     
-    public class AnimItem
-    {
-        public Item Item;
-        public bool isAdded;
-
-        public AnimItem(Item newItem, bool newIsAdded)
-        {
-            Item = newItem;
-            isAdded = newIsAdded;
-        }
-
-    }
 }

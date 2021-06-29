@@ -68,14 +68,15 @@ public class GameManager : MonoBehaviour
     }
     
     
-    public void GalaxyView(){
-    View.ForEach((obj) => obj.SetActive(false));
-            View.Find((obj) => obj.name == "Galaxy View").SetActive(true);
-            View.Find((obj) => obj.name == "UIManager").SetActive(true);
-            lastView = BackToGalaxyView;
-            Destroy(_actualSystemObj);
-            View.Remove(_actualSystemObj);
-}
+    public void GalaxyView()
+    {
+        View.ForEach((obj) => obj.SetActive(false));
+        View.Find((obj) => obj.name == "Galaxy View").SetActive(true);
+        View.Find((obj) => obj.name == "UIManager").SetActive(true);
+        lastView = BackToGalaxyView;
+        Destroy(_actualSystemObj);
+        View.Remove(_actualSystemObj);
+    }
 
 
     public void BackToGalaxyView()

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\theol\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\theol\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Space Odyssey.-8841932.00" t="ExcludeRecursive" />
-    <e p="D:\Space Odyssey" t="IncludeRecursive">
+    <e p="C:\Users\theol\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Space Odyssey.680482043.00" t="ExcludeRecursive" />
+    <e p="C:\Users\theol\Documents\GitHub\Space-Odyssey\Space Odyssey" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Asset Store" t="Include">
@@ -108,12 +108,16 @@
           </e>
         </e>
         <e p="MiningOperation.cs" t="Include" />
+        <e p="objetStore.cs" t="Include" />
         <e p="Script" t="Include">
+          <e p="AnimItem.cs" t="Include" />
           <e p="cameraManager.cs" t="Include" />
           <e p="exoGroundController.cs" t="Include" />
           <e p="gameOver.cs" t="Include" />
           <e p="MovableCamera.cs" t="Include" />
           <e p="NextSystem.cs" t="Include" />
+          <e p="NotificationManager.cs" t="Include" />
+          <e p="notificationType.cs" t="Include" />
           <e p="planeteOrbit.cs" t="Include" />
           <e p="PlayerManager.cs" t="Include" />
           <e p="StarClick.cs" t="Include" />
