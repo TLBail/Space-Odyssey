@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8f56bd84842e2498ea8dbcd2ada2ae, type: 3}
+  m_Name: Helium
+  m_EditorClassIdentifier: 
+  NomItem: Helium
+  "Quantit\xE9Item": 20
+  itemInCell: {fileID: 8307622761958333526, guid: ed5312555fdc06f43a6347a32b1d89e2,
+    type: 3}

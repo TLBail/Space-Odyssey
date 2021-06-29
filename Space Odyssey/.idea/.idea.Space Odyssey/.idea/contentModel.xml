@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\theol\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\theol\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Space Odyssey.-8841932.00" t="ExcludeRecursive" />
+    <e p="D:\Space Odyssey" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Asset Store" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="Jupiter" t="Include">
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Materials" t="Include">
+            <e p="UI-Default-No-Alpha.shader" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="ActiveStateToggler.cs" t="Include" />
+            <e p="ApplicationManager.cs" t="Include" />
+            <e p="ChangeColor.cs" t="Include" />
+            <e p="DragMe.cs" t="Include" />
+            <e p="DragPanel.cs" t="Include" />
+            <e p="DropMe.cs" t="Include" />
+            <e p="PanelManager.cs" t="Include" />
+            <e p="planeteManager.cs" t="Include" />
+            <e p="ResizePanel.cs" t="Include" />
+            <e p="ScrollDetailTexture.cs" t="Include" />
+            <e p="ShowSliderValue.cs" t="Include" />
+            <e p="TiltWindow.cs" t="Include" />
+          </e>
+          <e p="SimpleDragAndDrop" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="DragAndDropCell.cs" t="Include" />
+              <e p="DragAndDropItem.cs" t="Include" />
+              <e p="DummyControlUnit.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Space Shooter Template FREE" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Bonus.cs" t="Include" />
+              <e p="Boundary.cs" t="Include" />
+              <e p="DirectMoving.cs" t="Include" />
+              <e p="Enemy.cs" t="Include" />
+              <e p="FollowThePath.cs" t="Include" />
+              <e p="LevelController.cs" t="Include" />
+              <e p="Player.cs" t="Include" />
+              <e p="PlayerMoving.cs" t="Include" />
+              <e p="PlayerShooting.cs" t="Include" />
+              <e p="PoolingController.cs" t="Include" />
+              <e p="Projectile.cs" t="Include" />
+              <e p="RepeatingBackground.cs" t="Include" />
+              <e p="VisualEffect.cs" t="Include" />
+              <e p="Wave.cs" t="Include" />
+            </e>
+          </e>
+          <e p="TextMesh Pro" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="LiberationSans - OFL.txt" t="Include" />
+            </e>
+            <e p="Resources" t="Include">
+              <e p="LineBreaking Following Characters.txt" t="Include" />
+              <e p="LineBreaking Leading Characters.txt" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF SSD.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Mobile.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+            <e p="Sprites" t="Include">
+              <e p="EmojiOne Attribution.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Textures and Sprites" t="Include">
+            <e p="SF UI" t="Include">
+              <e p="Background" t="Include">
+                <e p="LICENSE.txt" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="FuelBar.cs" t="Include" />
+        <e p="GameManager.cs" t="Include" />
+        <e p="InventorySlot.cs" t="Include" />
+        <e p="InventoryUI.cs" t="Include" />
+        <e p="Item" t="Include">
+          <e p="Animation" t="Include">
+            <e p="AnimObjScript.cs" t="Include" />
+          </e>
+          <e p="Item.cs" t="Include" />
+          <e p="old system" t="Include">
+            <e p="InventaireRender.cs" t="Include" />
+            <e p="ItemOLd.cs" t="Include" />
+          </e>
+        </e>
+        <e p="MiningOperation.cs" t="Include" />
+        <e p="Script" t="Include">
+          <e p="cameraManager.cs" t="Include" />
+          <e p="exoGroundController.cs" t="Include" />
+          <e p="gameOver.cs" t="Include" />
+          <e p="MovableCamera.cs" t="Include" />
+          <e p="NextSystem.cs" t="Include" />
+          <e p="planeteOrbit.cs" t="Include" />
+          <e p="PlayerManager.cs" t="Include" />
+          <e p="StarClick.cs" t="Include" />
+          <e p="StarPath.cs" t="Include" />
+          <e p="UImanager.cs" t="Include" />
+        </e>
+        <e p="SlotItemToMove.cs" t="Include" />
+        <e p="SystemSelector.cs" t="Include" />
+        <e p="tutoEnabeler.cs" t="Include" />
+        <e p="Victoire.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Space Odyssey.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
