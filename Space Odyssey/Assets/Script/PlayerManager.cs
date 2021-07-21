@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
     private Queue<AnimItem> inventoryAction = new Queue<AnimItem>();
     [SerializeField] public GameObject animItemObj,animInventairPleinObj;
     [SerializeField] public Animation animSliderEnergie;
+    [SerializeField] public Animation animSliderVie;
     public Item selectedItem;
     public SlotItemToMove SlotItemToMove;
     public bool isOcuped = false;
@@ -57,34 +58,44 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    public void MineRessource()
-    {
-        Item newItem = ressourceminable[Random.Range(0, ressourceminable.Length)];
-        bool isadded = AddItem(newItem);
-    }
 
-    public void AjoutCarburant()
+    public void AjoutCarburant(Item fuelItem)
     {
+        if (!(fuelItem is Fuel fuel)) return;
         if (Energie < MaxEnergie)
         {
-            Item fuel = Inventaire.Find((item) => item.isFuel == true);
-            if (fuel != null)
-            {
-                Energie += fuel.AmountOfFuel;
-                RemoveItem(fuel);
-            }
-            else
-            {
-                Debug.Log("Plus de Carburant");
-                notificationManager.newNotification(NotificationType.INFORMATION, "plus de carburant a disposition");
-            }
+            Energie += fuel.amountOfFuel;
+            RemoveItem(fuel);
+        
+            /*
+            Debug.Log("Plus de Carburant");
+            notificationManager.newNotification(NotificationType.INFORMATION, "plus de carburant a disposition");
+            */
         }
         else
         {
             animSliderEnergie.PlayQueued("full animation");
         }
     }
+    
+    
+    public void AjoutCoque(Item CoqueItem)
+    {
+        if (!(CoqueItem is Metal coque)) return;
+        
+        if (Vie < MaxVie)
+        {
+            Vie += coque.amoutOfVie;
+            RemoveItem(coque);
+        }
+        else
+        {
+            animSliderVie.PlayQueued("full animation");
+        }
+    }
 
+    
+    
     private GameObject objtoDelete;
     public bool AddItem(Item item)
     {
@@ -138,7 +149,6 @@ public class PlayerManager : MonoBehaviour
     [Space(10)]
     public List<Item> Inventaire;
     public int MaxItemSpace;
-    public Item[] ressourceminable;
-
+    
     
 }

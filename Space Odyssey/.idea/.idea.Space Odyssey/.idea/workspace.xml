@@ -21,8 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="d4bda76d-d5a5-476c-ab98-c2693ca9c94f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventorySlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventorySlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Helium.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Helium.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Helium.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Helium.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Helium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Helium.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Methane.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Methane.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Methane.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Methane.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Methane.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Methane.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MiningOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiningOperation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Cream 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Cream 2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Cream-Violet-Planet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Cream-Violet-Planet.prefab" afterDir="false" />
@@ -32,12 +42,14 @@
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Red-Lines-PLanet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Red-Lines-PLanet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/StarClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/StarClick.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/StarPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/StarPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SlotItemToMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SlotItemToMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/star/star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/star/star.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +62,20 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Victoire.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/tutoEnabeler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/NotificationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/setInactiveOnAwake.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StoryGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/MovableCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MiningOperation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/objetStore.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SlotItemToMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FuelBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.5.7/Editor/Collaborate/UserInterface/CollaborateWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item/Fuel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/NotificationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item/Metal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SlotItemToMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InventorySlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ConsomableSlot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SystemSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CoqueBar.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -68,27 +85,33 @@
         <option value="$PROJECT_DIR$/Assets/SystemSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Victoire.cs" />
         <option value="$PROJECT_DIR$/Assets/FuelBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/InventorySlot.cs" />
-        <option value="$PROJECT_DIR$/Assets/SlotItemToMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/planeteOrbit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/StarClick.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/StarPath.cs" />
         <option value="$PROJECT_DIR$/Assets/InventoryUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Item/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/AnimObjScript.cs" />
         <option value="$PROJECT_DIR$/Assets/AnimAjoutRemove/AnimObjScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Item/Animation/AnimObjScript.cs" />
         <option value="$PROJECT_DIR$/Assets/tutoEnabeler.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/exoGroundController.cs" />
-        <option value="$PROJECT_DIR$/Assets/MiningOperation.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/notificationType.cs" />
         <option value="$PROJECT_DIR$/Assets/NotificationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/AnimItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/NotificationType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/objetStore.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/NotificationManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/InventorySlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/CoqueBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Item/Metal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Item/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Item/Fuel.cs" />
+        <option value="$PROJECT_DIR$/Assets/ConsomableSlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/MiningOperation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/SlotItemToMove.cs" />
+        <option value="$PROJECT_DIR$/Assets/StoryGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/setInactiveOnAwake.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/StarClick.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/StarPath.cs" />
       </list>
     </option>
   </component>
@@ -157,7 +180,8 @@
       <workItem from="1624977504150" duration="3579000" />
       <workItem from="1624984977177" duration="525000" />
       <workItem from="1624995213864" duration="4131000" />
-      <workItem from="1625001436188" duration="332000" />
+      <workItem from="1625001436188" duration="592000" />
+      <workItem from="1626877901846" duration="13028000" />
     </task>
     <servers />
   </component>
@@ -182,9 +206,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1624996419173">
+    <state x="991" y="94" width="1162" height="1207" key="VCS.FileHistoryDialog" timestamp="1626896644236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1624996419173" />
+    <state x="991" y="94" width="1162" height="1207" key="VCS.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1626896644236" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1626900270783">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1626900270783" />
   </component>
 </project>

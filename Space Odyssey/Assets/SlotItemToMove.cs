@@ -26,6 +26,7 @@ public class SlotItemToMove : MonoBehaviour
         
         if (isCLick)
         {
+            PlayerManager.Instance.selectedItem = null;
             icon.enabled = false;
             isCLick = false;
         }

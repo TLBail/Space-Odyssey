@@ -16,6 +16,15 @@ public class MiningOperation : MonoBehaviour
     public  Animator animator;
 
     public float timeTransition = 0.5f;
+    [SerializeField]
+    public Item[] ressourceminable;
+
+    
+    private void addItem()
+    {
+        Item newItem = ressourceminable[Random.Range(0, ressourceminable.Length)];
+        bool isadded = PlayerManager.Instance.AddItem(newItem);
+    }
     
     public void mineDesRessource()
     {
@@ -32,7 +41,7 @@ public class MiningOperation : MonoBehaviour
         miningForce = ((int) slider.value) * Random.Range(1, 3);
         for (int i = 0; i <= miningForce; i++)
         {
-            playerManager.MineRessource();
+            addItem();
         }
     }
 

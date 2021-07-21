@@ -168,6 +168,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 3366368992869469589}
   m_maskType: 0
+  _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
 --- !u!1 &8532867043541726532
@@ -268,6 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textInfo: {fileID: 758818451492360770}
+  transitionObject: {fileID: 8532867043541726532}
   pretextCout: 'Cout en Fuel :  '
   SystemIndex: 0
   CoutCarbu: 0

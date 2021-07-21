@@ -93,6 +93,8 @@
             </e>
           </e>
         </e>
+        <e p="ConsomableSlot.cs" t="Include" />
+        <e p="CoqueBar.cs" t="Include" />
         <e p="FuelBar.cs" t="Include" />
         <e p="GameManager.cs" t="Include" />
         <e p="InventorySlot.cs" t="Include" />
@@ -101,7 +103,9 @@
           <e p="Animation" t="Include">
             <e p="AnimObjScript.cs" t="Include" />
           </e>
+          <e p="Fuel.cs" t="Include" />
           <e p="Item.cs" t="Include" />
+          <e p="Metal.cs" t="Include" />
           <e p="old system" t="Include">
             <e p="InventaireRender.cs" t="Include" />
             <e p="ItemOLd.cs" t="Include" />
@@ -124,7 +128,9 @@
           <e p="StarPath.cs" t="Include" />
           <e p="UImanager.cs" t="Include" />
         </e>
+        <e p="setInactiveOnAwake.cs" t="Include" />
         <e p="SlotItemToMove.cs" t="Include" />
+        <e p="StoryGenerator.cs" t="Include" />
         <e p="SystemSelector.cs" t="Include" />
         <e p="tutoEnabeler.cs" t="Include" />
         <e p="Victoire.cs" t="Include" />

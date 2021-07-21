@@ -8,11 +8,14 @@ public class StarClick : MonoBehaviour
 {
     private SpriteRenderer _sprite;
     private TextMeshPro _text;
-    [SerializeField] private GameObject textInfo ;
+    [SerializeField] private GameObject textInfo ; 
+    public GameObject transitionObject ; //set lors de l'instansciation dans starPath
+    public GameObject main ;//set lors de l'instansciation dans starPath
     private GameObject WarningObj;
     [TextArea] public string pretextCout;
     public int SystemIndex, CoutCarbu;
     public float TimeAnim;
+    
     
     private void Start()
     {
@@ -20,6 +23,7 @@ public class StarClick : MonoBehaviour
          _text = textInfo.GetComponent<TextMeshPro>();
          _text.text =  pretextCout + CoutCarbu;
          WarningObj = GameManager.Instance.WarningObj;
+         
     }
 
    
@@ -65,9 +69,7 @@ public class StarClick : MonoBehaviour
                         }
                         else
                         {
-                            GameManager.Instance.SystemView(SystemIndex);
-                            GameManager.Instance.ActualSystemIndex++;
-                            PlayerManager.Instance.Energie -= CoutCarbu;
+                            GOToNextSystem(SystemIndex);
                         }
                     }
                     else
@@ -94,9 +96,7 @@ public class StarClick : MonoBehaviour
                 {
                     if (TestCarbu())
                     {
-                        GameManager.Instance.SystemView(SystemIndex);
-                        GameManager.Instance.ActualSystemIndex--;
-                        PlayerManager.Instance.Energie -= CoutCarbu;
+                        GOToNextSystem(SystemIndex);
                     }
                     else
                     {
@@ -123,6 +123,19 @@ public class StarClick : MonoBehaviour
     private Boolean TestCarbu() => PlayerManager.Instance.Energie >= CoutCarbu;
 
 
+    private void GOToNextSystem(int systemIndex)
+    {
+        GameManager.Instance.ActualSystemIndex = systemIndex;
+        PlayerManager.Instance.Energie -= CoutCarbu;
+        
+        main.SetActive(false);
+        transitionObject.SetActive(true);
+    }
+    
+
+    
+    
+    
     private void AnimWarning()
     {
         WarningObj.SetActive(true); 

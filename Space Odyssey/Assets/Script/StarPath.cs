@@ -10,8 +10,9 @@ public class StarPath : MonoBehaviour
     [SerializeField] public float _OrbitXmax, _OrbitYmin, _OrbitYmax;
     [SerializeField] public List<PlaneteSystem> planeteSystemsList = new List<PlaneteSystem>();
     [SerializeField] private GameObject[] _planeteBank;
-    [SerializeField] private GameObject _stars, finalStars;
+    [SerializeField] private GameObject _stars, finalStars, main, transitionObject;
 
+    
     
     public void NewGameNewSystem()
     {
@@ -52,6 +53,10 @@ public class StarPath : MonoBehaviour
             obj.transform.SetParent(gameObject.transform);
             obj.GetComponent<StarClick>().SystemIndex = i;
             obj.GetComponent<StarClick>().CoutCarbu = (int)Random.Range(PlayerManager.Instance.MaxEnergie/4 , PlayerManager.Instance.MaxEnergie);
+            obj.GetComponent<StarClick>().main = main;
+            obj.GetComponent<StarClick>().transitionObject = transitionObject;
+            Debug.Log(obj.GetComponent<StarClick>().main);
+            Debug.Log(obj.GetComponent<StarClick>().transitionObject);
         }
         posx += Random.Range(5, 15);
         posy += Random.Range(-5, -2);
@@ -59,7 +64,11 @@ public class StarPath : MonoBehaviour
         finalstarObj.transform.SetParent(gameObject.transform);
         finalstarObj.GetComponent<StarClick>().SystemIndex = planeteSystemsList.Count;
         finalstarObj.GetComponent<StarClick>().CoutCarbu = (int)Random.Range(PlayerManager.Instance.MaxEnergie/4 , PlayerManager.Instance.MaxEnergie);
+        finalstarObj.GetComponent<StarClick>().main = main;
+        finalstarObj.GetComponent<StarClick>().transitionObject = transitionObject;
+
     }
+    
 }
 
 [System.Serializable]

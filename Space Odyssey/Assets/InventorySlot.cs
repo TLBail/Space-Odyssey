@@ -41,6 +41,8 @@ public class InventorySlot : MonoBehaviour
 
     public void Onclick()
     {
+        if (_item == null) return;
+
         PlayerManager.Instance.selectedItem = _item;
         slotItemToMoveObj.OnMove();
     }

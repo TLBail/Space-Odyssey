@@ -6,7 +6,4 @@ public class Item : ScriptableObject
 {
     new public string name = "NewItem";
     public Sprite icon = null;
-    public bool isDefaultItem = false;
-    public bool isFuel = false;
-    public int AmountOfFuel;
 }
