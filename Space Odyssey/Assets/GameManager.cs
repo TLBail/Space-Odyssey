@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public StarPath
         _starPath;
     public int ActualSystemIndex;
-    public int ActualPlaneteIndex;
+    public planeteOrbit ActualPlanete;
     private GameObject _actualSystemObj;
 
     public Action lastView;

@@ -3,15 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+public enum TypePlanete
+{
+    DESERTE,
+    GAZEUSE
+}
+
 public class planeteOrbit : MonoBehaviour
 {
 
     [SerializeField] private float _rotationSpeed, _rotationAnimSpeed;
     [SerializeField] private GameObject _cercleAnimObj, _textInfo;
     [SerializeField] private int _planetIndex, _lifeCost, _EnergieCost;
+    [SerializeField] public Sprite planeteSprite;
+    [SerializeField] public Sprite groundSprite;
+    [SerializeField] public TypePlanete TypePlanete; 
     private CircleCollider2D _circleCollider2D;
     private bool _rotate;
     private TextMeshPro _text;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +39,10 @@ public class planeteOrbit : MonoBehaviour
         transform.rotation = Quaternion.Euler(Vector3.zero);
         if (_rotate)
         {
-            _cercleAnimObj.transform.Rotate(Vector3.forward * Time.deltaTime * _rotationAnimSpeed);
+            _cercleAnimObj.transform.Rotate(Vector3.forward * (Time.deltaTime * _rotationAnimSpeed));
             if (Input.GetKeyDown(KeyCode.E))
             {
-                GameManager.Instance.ActualPlaneteIndex = _planetIndex;
+                GameManager.Instance.ActualPlanete = this;
                 PlayerManager.Instance.Energie += _EnergieCost;
                 PlayerManager.Instance.Vie += _lifeCost;
                 GameManager.Instance.PlaneteView();

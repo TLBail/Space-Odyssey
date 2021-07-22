@@ -5,14 +5,12 @@ using UnityEngine.UI;
 
 public class exoGroundController : MonoBehaviour
 {
-    [SerializeField] private Sprite[] _backGroundArray;
-
     [Space(20)]
     [SerializeField] private Image BackgroundSp;
     
     private void OnEnable()
     {
-        BackgroundSp.sprite = _backGroundArray[GameManager.Instance.ActualPlaneteIndex];
+        BackgroundSp.sprite = GameManager.Instance.ActualPlanete.groundSprite;
 
     }
 

@@ -1,18 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class planeteManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] _backGroundArray;
+    [SerializeField] private Image _imageBackground;
+    [SerializeField] private GameObject planeteView;
+    [SerializeField] private GameObject geanteView;
+    
     private void OnEnable()
     {
-        foreach (var obj in _backGroundArray)
-        {
-            obj.SetActive(false);
-        }
 
-        _backGroundArray[GameManager.Instance.ActualPlaneteIndex].SetActive(true);
+        planeteOrbit planeteOrbit = GameManager.Instance.ActualPlanete;
+        
+        _imageBackground.sprite = planeteOrbit.planeteSprite;
+        
+        planeteView.SetActive(planeteOrbit.TypePlanete == TypePlanete.DESERTE);
+        geanteView.SetActive(planeteOrbit.TypePlanete == TypePlanete.GAZEUSE);
+        
+
+
 
     }
 

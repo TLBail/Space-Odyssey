@@ -21,19 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d4bda76d-d5a5-476c-ab98-c2693ca9c94f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventorySlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item/Helium.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Helium.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item/Helium.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Helium.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item/Helium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item/Helium.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item/Methane.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Methane.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item/Methane.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Methane.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item/Methane.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item/Methane.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MiningOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiningOperation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/arriverVaiseauTransitionSystem.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/arriverVaiseauTransitionSystem.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Store/Scripts/planeteManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Store/Scripts/planeteManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Cream 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Cream 2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Cream-Violet-Planet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Cream-Violet-Planet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Purple 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Purple 2.prefab" afterDir="false" />
@@ -41,15 +32,12 @@
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Red 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Red 2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Red-Lines-PLanet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Red-Lines-PLanet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/StarClick.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/StarClick.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/StarPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/StarPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SlotItemToMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SlotItemToMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/star/star.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/star/star.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/exoGroundController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/exoGroundController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/planeteOrbit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/planeteOrbit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +52,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/tutoEnabeler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/setInactiveOnAwake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StoryGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SondageOperation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/MovableCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MiningOperation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/objetStore.cs" root0="FORCE_HIGHLIGHTING" />
@@ -85,14 +74,11 @@
         <option value="$PROJECT_DIR$/Assets/SystemSelector.cs" />
         <option value="$PROJECT_DIR$/Assets/Victoire.cs" />
         <option value="$PROJECT_DIR$/Assets/FuelBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/planeteOrbit.cs" />
         <option value="$PROJECT_DIR$/Assets/InventoryUI.cs" />
         <option value="$PROJECT_DIR$/Assets/AnimObjScript.cs" />
         <option value="$PROJECT_DIR$/Assets/AnimAjoutRemove/AnimObjScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Item/Animation/AnimObjScript.cs" />
         <option value="$PROJECT_DIR$/Assets/tutoEnabeler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/exoGroundController.cs" />
-        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/notificationType.cs" />
         <option value="$PROJECT_DIR$/Assets/NotificationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/AnimItem.cs" />
@@ -112,6 +98,11 @@
         <option value="$PROJECT_DIR$/Assets/setInactiveOnAwake.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/StarClick.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/StarPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/exoGroundController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/planeteOrbit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Asset Store/Scripts/planeteManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/SondageOperation.cs" />
       </list>
     </option>
   </component>
@@ -181,7 +172,9 @@
       <workItem from="1624984977177" duration="525000" />
       <workItem from="1624995213864" duration="4131000" />
       <workItem from="1625001436188" duration="592000" />
-      <workItem from="1626877901846" duration="13028000" />
+      <workItem from="1626877901846" duration="13190000" />
+      <workItem from="1626956162929" duration="2101000" />
+      <workItem from="1626959132029" duration="2380000" />
     </task>
     <servers />
   </component>
@@ -206,6 +199,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1626960811717">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.2560.1400@0.0.2560.1400" timestamp="1626960811717" />
     <state x="991" y="94" width="1162" height="1207" key="VCS.FileHistoryDialog" timestamp="1626896644236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

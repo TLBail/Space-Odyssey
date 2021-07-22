@@ -130,6 +130,7 @@
         </e>
         <e p="setInactiveOnAwake.cs" t="Include" />
         <e p="SlotItemToMove.cs" t="Include" />
+        <e p="SondageOperation.cs" t="Include" />
         <e p="StoryGenerator.cs" t="Include" />
         <e p="SystemSelector.cs" t="Include" />
         <e p="tutoEnabeler.cs" t="Include" />
