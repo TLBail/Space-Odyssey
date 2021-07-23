@@ -93,6 +93,7 @@
             </e>
           </e>
         </e>
+        <e p="BulletAi.cs" t="Include" />
         <e p="ConsomableSlot.cs" t="Include" />
         <e p="CoqueBar.cs" t="Include" />
         <e p="FuelBar.cs" t="Include" />
@@ -133,6 +134,7 @@
         <e p="SondageOperation.cs" t="Include" />
         <e p="StoryGenerator.cs" t="Include" />
         <e p="SystemSelector.cs" t="Include" />
+        <e p="TurretAI.cs" t="Include" />
         <e p="tutoEnabeler.cs" t="Include" />
         <e p="Victoire.cs" t="Include" />
       </e>

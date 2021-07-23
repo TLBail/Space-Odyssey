@@ -279,7 +279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5342880830396445273}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.970071, y: 19.974442, z: 23}
+  m_LocalPosition: {x: -37.639927, y: 16.71933, z: 23}
   m_LocalScale: {x: 0.26636574, y: 0.26636574, z: 0.26636574}
   m_Children:
   - {fileID: 5342142810753338718}
@@ -376,3 +376,5 @@ MonoBehaviour:
   planeteSprite: {fileID: 21300000, guid: fb49df3df27292c42b6e32f88241ad81, type: 3}
   groundSprite: {fileID: 21300000, guid: 9c290c6441f91094cbdc58373e44d97e, type: 3}
   TypePlanete: 1
+  turret: {fileID: 6661889603046569378, guid: 33ba7798fbedca5498a87a04b63480fe, type: 3}
+  chanceDeInvokerUneTurret: 20

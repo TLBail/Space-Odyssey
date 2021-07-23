@@ -10125,6 +10125,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: SF Button Start
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 796236816}
+    - target: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onStartSondageClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SondageOperation, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 22400002, guid: 05a81c3d5091440058129444d28322f3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.37998962
@@ -10654,6 +10682,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sondageView: {fileID: 1499443635}
+  ressourceminable:
+  - {fileID: 11400000, guid: b17452f49ec89374eb91660e9e350e9d, type: 2}
+  - {fileID: 11400000, guid: 110613c28432174498ae6cf43e881356, type: 2}
+  slider: {fileID: 182941958}
 --- !u!1 &811221794
 GameObject:
   m_ObjectHideFlags: 0
@@ -12281,8 +12313,6 @@ MonoBehaviour:
   timeTransition: 1
   ressourceminable:
   - {fileID: 11400000, guid: c4c3cb6b3c04c224f930e60f58599999, type: 2}
-  - {fileID: 11400000, guid: 110613c28432174498ae6cf43e881356, type: 2}
-  - {fileID: 11400000, guid: b17452f49ec89374eb91660e9e350e9d, type: 2}
 --- !u!225 &945317990
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -16172,6 +16202,7 @@ MonoBehaviour:
   selectedItem: {fileID: 0}
   SlotItemToMove: {fileID: 843429951}
   isOcuped: 0
+  shipGameObject: {fileID: 56724216}
   notificationManager: {fileID: 1508305976}
   Vie: 0
   MaxVie: 20

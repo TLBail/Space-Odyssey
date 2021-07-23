@@ -20,6 +20,9 @@ public class PlayerManager : MonoBehaviour
     public bool isOcuped = false;
     private bool IsOnAnimationInvantaire = false;
 
+    public GameObject shipGameObject;
+
+    
     public NotificationManager notificationManager;
     
     private void Awake()
@@ -149,6 +152,4 @@ public class PlayerManager : MonoBehaviour
     [Space(10)]
     public List<Item> Inventaire;
     public int MaxItemSpace;
-    
-    
 }
