@@ -60,7 +60,7 @@ public class StarPath : MonoBehaviour
         }
         posx += Random.Range(5, 15);
         posy += Random.Range(-5, -2);
-        GameObject finalstarObj = Instantiate(finalStars, new Vector3(posx, posy, 0), transform.rotation);
+        GameObject finalstarObj = Instantiate(finalStars, new Vector3(posx, posy, 10), transform.rotation);
         finalstarObj.transform.SetParent(gameObject.transform);
         finalstarObj.GetComponent<StarClick>().SystemIndex = planeteSystemsList.Count;
         finalstarObj.GetComponent<StarClick>().CoutCarbu = (int)Random.Range(PlayerManager.Instance.MaxEnergie/4 , PlayerManager.Instance.MaxEnergie);

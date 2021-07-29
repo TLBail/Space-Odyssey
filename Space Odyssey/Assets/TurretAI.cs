@@ -134,7 +134,7 @@ public class TurretAI : MonoBehaviour
 
 
     }
-    
+
     private void shootBullet()
     {
         GameObject bullet = (GameObject) Instantiate(this.bullet, bulletStartingPosition.position, transform.rotation);

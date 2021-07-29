@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    [SerializeField] private Object boosPrefab;
     [SerializeField] private List<GameObject> View;
     [Space(10)]
     [SerializeField] private UnityEngine.Object
@@ -102,6 +104,12 @@ public class GameManager : MonoBehaviour
                 obji.transform.SetParent(_actualSystemObj.transform);
             }
 
+            if (_starPath._numberOfSystem - 1 == ActualSystemIndex)
+            {
+                GameObject ship = (GameObject) Instantiate(boosPrefab, new Vector3(20,0,0), Quaternion.identity);
+                ship.transform.SetParent(_actualSystemObj.transform);
+            }
+            
             lastView = BackToSystemView;
     }
 

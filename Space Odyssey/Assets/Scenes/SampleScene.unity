@@ -16148,6 +16148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0baa32616f999a4b95bf008a554e25d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boosPrefab: {fileID: 2166643883112372533, guid: eb460429a5adeb448ac925e76e8b43f9,
+    type: 3}
   View:
   - {fileID: 1457277640}
   - {fileID: 1841420795}

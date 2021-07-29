@@ -93,11 +93,13 @@
             </e>
           </e>
         </e>
+        <e p="BossAi.cs" t="Include" />
         <e p="BulletAi.cs" t="Include" />
         <e p="ConsomableSlot.cs" t="Include" />
         <e p="CoqueBar.cs" t="Include" />
         <e p="FuelBar.cs" t="Include" />
         <e p="GameManager.cs" t="Include" />
+        <e p="guidedBulletAi.cs" t="Include" />
         <e p="InventorySlot.cs" t="Include" />
         <e p="InventoryUI.cs" t="Include" />
         <e p="Item" t="Include">
