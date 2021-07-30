@@ -22,25 +22,20 @@
     <list default="true" id="d4bda76d-d5a5-476c-ab98-c2693ca9c94f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Prefabs/VFX/EngineFx.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Prefabs/VFX/EngineFx.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Prefabs/Projectiles/Player_Short_Lazer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Prefabs/Projectiles/Player_Short_Lazer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Cream 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Cream 2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Cream-Violet-Planet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Cream-Violet-Planet.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Purple 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Purple 2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Purple-Planet-wih-Moon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Purple-Planet-wih-Moon.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Red 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Red 2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PlaneteBank/Red-Lines-PLanet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlaneteBank/Red-Lines-PLanet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/StarPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/StarPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SystemEx/System Vide.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SystemEx/System Vide.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TurretAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TurretAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ship/Boss.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ship/Boss.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ship/missileAteteChercheuse.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ship/missileAteteChercheuse.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/guidedBulletAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/guidedBulletAi.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,12 +106,13 @@
         <option value="$PROJECT_DIR$/Assets/BulletAi.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/planeteOrbit.cs" />
         <option value="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/TurretAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/guidedBulletAi.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/StarPath.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/BossAi.cs" />
+        <option value="$PROJECT_DIR$/Assets/shieldManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/guidedBulletAi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/Projectile.cs" />
       </list>
     </option>
   </component>
@@ -192,6 +188,7 @@
       <workItem from="1627044036302" duration="377000" />
       <workItem from="1627044489555" duration="11595000" />
       <workItem from="1627560119239" duration="11689000" />
+      <workItem from="1627657307984" duration="3929000" />
     </task>
     <servers />
   </component>
@@ -216,21 +213,25 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="498" height="446" key="SwitcherDM" timestamp="1626960811717">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1627657520334">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.2560.1400@0.0.2560.1400" timestamp="1626960811717" />
+    <state width="498" height="446" key="SwitcherDM/0.0.2560.1400@0.0.2560.1400" timestamp="1627657520334" />
     <state x="991" y="94" width="1162" height="1207" key="VCS.FileHistoryDialog" timestamp="1626896644236">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="991" y="94" width="1162" height="1207" key="VCS.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1626896644236" />
+    <state x="257" y="372" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1627671254673">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="257" y="372" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1627671254673" />
     <state x="670" y="368" key="run.anything.popup" timestamp="1627063491757">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="670" y="368" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1627063491757" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1627570094918">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1627671646611">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1627570094918" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1627671646611" />
   </component>
 </project>

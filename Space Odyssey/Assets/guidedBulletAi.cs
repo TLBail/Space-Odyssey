@@ -28,7 +28,7 @@ public class guidedBulletAi : MonoBehaviour
     }
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         transform.Translate(Vector3.right * (speed * Time.deltaTime));
         rotateTowardThePlayer();

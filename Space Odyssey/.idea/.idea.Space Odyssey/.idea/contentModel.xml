@@ -132,6 +132,7 @@
           <e p="UImanager.cs" t="Include" />
         </e>
         <e p="setInactiveOnAwake.cs" t="Include" />
+        <e p="shieldManager.cs" t="Include" />
         <e p="SlotItemToMove.cs" t="Include" />
         <e p="SondageOperation.cs" t="Include" />
         <e p="StoryGenerator.cs" t="Include" />
