@@ -9,8 +9,8 @@ j'ai rajouté des phase de combat.
 
 ## ROAD MAP
 
-- [] trouvé des vrai sprite 
-- [] faire un abre de technologie/améliorations
+- [] trouvé des vrais sprites 
+- [] faire un arbre de technologie/améliorations
 - [] plus d'arme pour le joueur
 - [] un bouclier améliorable pour le joueur
-- [] des ennemie random
+- [] des ennemies random
