@@ -39,6 +39,10 @@ public class BossAi : MonoBehaviour
     [SerializeField] private Object guidedMissile;
     [SerializeField] private Transform[] missileStratingTransforms;
     [SerializeField] private Animator missileAnitmatior;
+
+    [Header("Wing")] 
+    [SerializeField] private GameObject leftWing;
+    [SerializeField] private GameObject rightWing;
     
     private int actualconstitution;
     private PlayerManager playerManager;
@@ -81,14 +85,18 @@ public class BossAi : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-    
+        onBulletEnter(other);
+    }
+
+    public void onBulletEnter(Collider2D other)
+    {
         if (other.CompareTag(PlayerbulletTag))
         {
             actualconstitution -= playerprojectileDps;
         }
-        
-    }
 
+    }
+    
     private void blowUp()
     {
         Instantiate(explosion, transform.position, Quaternion.identity); //generating destruction visual effect and destroying the 'Player' object
@@ -101,6 +109,7 @@ public class BossAi : MonoBehaviour
         {
             blowUp();
             _spriteRenderer.sprite = _bosseSprites[1];
+            rightWing.SetActive(false);
             bossState = BossState.PHASE2;
             return;
         }
@@ -115,6 +124,7 @@ public class BossAi : MonoBehaviour
 
         
     }
+    
 
     private void modePhase2()
     {
@@ -122,6 +132,7 @@ public class BossAi : MonoBehaviour
         {
             blowUp();
             _spriteRenderer.sprite = _bosseSprites[2];
+            leftWing.SetActive(false);
             bossState = BossState.PHASE3;
             return;
         }

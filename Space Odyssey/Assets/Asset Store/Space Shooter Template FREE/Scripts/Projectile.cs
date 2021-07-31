@@ -21,15 +21,12 @@ public class Projectile : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) //when a projectile collides with another object
     {
-        if (enemyBullet && collision.tag == "Player") //if anoter object is 'player' or 'enemy sending the command of receiving the damage
-        {
-            //Player.instance.GetDamage(damage); 
-            if (destroyedByCollision)
-                Destruction();
-        }
-        else if (!enemyBullet && collision.tag == "Enemy")
+        
+        
+        if (!enemyBullet && collision.tag == "Enemy")
         {
             //collision.GetComponent<Enemy>().GetDamage(damage);
+            Debug.Log(collision.gameObject.name);
             if (destroyedByCollision)
                 Destruction();
         }
@@ -37,7 +34,7 @@ public class Projectile : MonoBehaviour {
 
     private void OnEnable()
     {
-        Invoke("Destruction", 5f);
+        Invoke("hide", 5f);
     }
 
     void Destruction() 
@@ -45,6 +42,13 @@ public class Projectile : MonoBehaviour {
         Instantiate(explosion, transform.position, transform.rotation);
         gameObject.SetActive(false);
     }
+
+    private void hide()
+    {
+        gameObject.SetActive(false);
+        
+    }
+    
 }
 
 

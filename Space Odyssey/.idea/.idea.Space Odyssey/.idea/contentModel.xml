@@ -140,6 +140,7 @@
         <e p="TurretAI.cs" t="Include" />
         <e p="tutoEnabeler.cs" t="Include" />
         <e p="Victoire.cs" t="Include" />
+        <e p="wingScript.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

@@ -1343,7 +1343,7 @@ PrefabInstance:
     - target: {fileID: 114660646102788534, guid: 8e33fda0c220936498f5288af83d7450,
         type: 3}
       propertyPath: _turnSpeed
-      value: 200
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114660646102788534, guid: 8e33fda0c220936498f5288af83d7450,
         type: 3}
