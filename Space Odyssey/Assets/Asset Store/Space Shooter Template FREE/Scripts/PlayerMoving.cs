@@ -57,7 +57,7 @@ public class PlayerMoving : MonoBehaviour {
                 _particuleEngine.startSize = 1;
 
             }
-            _rigidbody.AddRelativeForce(Vector3.right * (Input.GetAxis("Horizontal") * Time.deltaTime * _turnSpeed));
+            _rigidbody.AddRelativeForce(Vector3.right * ( Input.GetAxis("Horizontal") * Time.deltaTime * _speed / 2));
             _rigidbody.AddRelativeForce(Vector3.up * (Input.GetAxis("Vertical") * Time.deltaTime * _speed));
 
             Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;

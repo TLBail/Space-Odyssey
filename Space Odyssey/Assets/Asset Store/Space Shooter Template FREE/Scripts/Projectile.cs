@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 /// <summary>
 /// Defines the damage and defines whether the projectile belongs to the ‘Enemy’ or to the ‘Player’, whether the projectile is destroyed in the collision, or not and amount of damage.
@@ -18,7 +20,11 @@ public class Projectile : MonoBehaviour {
     public bool destroyedByCollision;
 
     [SerializeField] private Object explosion;
-
+    [SerializeField, Range(0, 10000)] private float coolDown;
+    
+    private float actualcooldDown;
+    
+    
     private void OnTriggerEnter2D(Collider2D collision) //when a projectile collides with another object
     {
         
@@ -32,9 +38,16 @@ public class Projectile : MonoBehaviour {
         }
     }
 
+    private void Update()
+    {
+        actualcooldDown += Time.deltaTime * 1000;
+        if(actualcooldDown >= coolDown) Destruction();
+
+    }
+
     private void OnEnable()
     {
-        Invoke("hide", 5f);
+        actualcooldDown = 0;
     }
 
     void Destruction() 
@@ -43,11 +56,6 @@ public class Projectile : MonoBehaviour {
         gameObject.SetActive(false);
     }
 
-    private void hide()
-    {
-        gameObject.SetActive(false);
-        
-    }
     
 }
 

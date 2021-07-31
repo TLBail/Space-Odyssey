@@ -141,6 +141,7 @@ MonoBehaviour:
   enemyBullet: 0
   destroyedByCollision: 1
   explosion: {fileID: 1280240331523082, guid: 45ae5851ef2832044bba82850372d67b, type: 3}
+  coolDown: 5000
 --- !u!50 &50715205994070856
 Rigidbody2D:
   serializedVersion: 4
