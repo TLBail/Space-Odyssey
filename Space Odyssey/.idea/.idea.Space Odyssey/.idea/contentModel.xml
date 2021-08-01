@@ -100,6 +100,7 @@
         <e p="FuelBar.cs" t="Include" />
         <e p="GameManager.cs" t="Include" />
         <e p="guidedBulletAi.cs" t="Include" />
+        <e p="InventaireViewManager.cs" t="Include" />
         <e p="InventorySlot.cs" t="Include" />
         <e p="InventoryUI.cs" t="Include" />
         <e p="Item" t="Include">
@@ -115,6 +116,11 @@
           </e>
         </e>
         <e p="MiningOperation.cs" t="Include" />
+        <e p="node amélioration" t="Include">
+          <e p="Amelioration.cs" t="Include" />
+        </e>
+        <e p="nodeAi.cs" t="Include" />
+        <e p="nodeManager.cs" t="Include" />
         <e p="objetStore.cs" t="Include" />
         <e p="Script" t="Include">
           <e p="AnimItem.cs" t="Include" />

@@ -23,11 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4bda76d-d5a5-476c-ab98-c2693ca9c94f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Space Odyssey/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Prefabs/Projectiles/Player_Short_Lazer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Prefabs/Projectiles/Player_Short_Lazer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/PlayerMoving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/PlayerMoving.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Store/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Store/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Asset Store/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Asset Store/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item/Fer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Item/Fer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LEMONMILK-Medium SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LEMONMILK-Medium SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,28 +48,32 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Victoire.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/tutoEnabeler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/setInactiveOnAwake.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/StoryGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BossAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SondageOperation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/MovableCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MiningOperation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/InventaireViewManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item/Fuel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Item/Metal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/guidedBulletAi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TurretAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ConsomableSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SystemSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Victoire.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/setInactiveOnAwake.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/StoryGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/MovableCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/nodeAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/objetStore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FuelBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.1.0/Unity.Mathematics/bool2.gen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Item/Fuel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/NotificationManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Item/Metal.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/guidedBulletAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/BulletAi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SlotItemToMove.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TurretAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InventorySlot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ConsomableSlot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SystemSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CoqueBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/node amélioration/Amelioration.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -94,7 +108,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/exoGroundController.cs" />
         <option value="$PROJECT_DIR$/Assets/Asset Store/Scripts/planeteManager.cs" />
         <option value="$PROJECT_DIR$/Assets/SondageOperation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/planeteOrbit.cs" />
         <option value="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/TurretAI.cs" />
@@ -103,10 +116,16 @@
         <option value="$PROJECT_DIR$/Assets/shieldManager.cs" />
         <option value="$PROJECT_DIR$/Assets/guidedBulletAi.cs" />
         <option value="$PROJECT_DIR$/Assets/BulletAi.cs" />
-        <option value="$PROJECT_DIR$/Assets/wingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/BossAi.cs" />
         <option value="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Asset Store/Space Shooter Template FREE/Scripts/PlayerMoving.cs" />
+        <option value="$PROJECT_DIR$/Assets/wingScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/node amélioration/Amelioration.cs" />
+        <option value="$PROJECT_DIR$/Assets/nodeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/InventaireViewManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/nodeAi.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeManager.cs" />
       </list>
     </option>
   </component>
@@ -183,7 +202,8 @@
       <workItem from="1627044489555" duration="11595000" />
       <workItem from="1627560119239" duration="11689000" />
       <workItem from="1627657307984" duration="3929000" />
-      <workItem from="1627735089077" duration="4261000" />
+      <workItem from="1627735089077" duration="7899000" />
+      <workItem from="1627825296608" duration="13786000" />
     </task>
     <servers />
   </component>
@@ -224,9 +244,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="670" y="368" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1627063491757" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1627739380556">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1627838934713">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1627739380556" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1627838934713" />
   </component>
 </project>

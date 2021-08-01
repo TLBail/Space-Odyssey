@@ -152,4 +152,6 @@ public class PlayerManager : MonoBehaviour
     [Space(10)]
     public List<Item> Inventaire;
     public int MaxItemSpace;
+    public List<Amelioration> purchasedAmeliorations;
+
 }
