@@ -3,6 +3,8 @@
 
 la dernière realase est dans le dossier release du dépot ( c faux github veut plus que je push le .exe du jeux vu qu'il est trop gros (et j'ai plus de giga pour git lfs))
 
+ducoup clique là https://developer.cloud.unity3d.com/share/share.html?shareId=Zkz9ZGh2ND
+
 le jeu est grandement inspiré de "Out there" (très bon jeu au passage).
 
 j'ai rajouté des phase de combat.
