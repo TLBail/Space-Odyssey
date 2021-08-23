@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Script;
 using UnityEngine;
 using TMPro;
 using Random = UnityEngine.Random;
@@ -23,9 +24,18 @@ public class planeteOrbit : MonoBehaviour
     [SerializeField] private GameObject turret;
     [SerializeField, Tooltip("une valeur est tirer au sort entre 100 et 0 si elle est inférieur la tourell est invoker "), Range(0, 100)]
     private int chanceDeInvokerUneTurret;
+    [Header("SpaceStation")]
+    [SerializeField] private GameObject spaceStationPrefab;
+    [SerializeField, Tooltip("une valeur est tirer au sort entre 100 et 0 si elle est inférieur la station spatial est invoker "), Range(0, 100)]
+    private int chanceDeInvokerUneSpaceStation;
+
+
+    [NonSerialized] public bool haveASpaceStation;
+    
     private CircleCollider2D _circleCollider2D;
-    private bool _rotate;
     private TextMeshPro _text;
+
+    private bool playerIsNear;
     
     
     // Start is called before the first frame update
@@ -35,6 +45,7 @@ public class planeteOrbit : MonoBehaviour
         _text = _textInfo.GetComponent<TextMeshPro>();
         _text.text = _text.text + "\n Cout en Vie  : " + _lifeCost + "\n Cout en Energie : " + _EnergieCost;
 
+        spaceStationInvokeTEst(); 
         turretTest();
     }
 
@@ -43,21 +54,32 @@ public class planeteOrbit : MonoBehaviour
     {
         transform.RotateAround(Vector3.zero, Vector3.forward, _rotationSpeed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(Vector3.zero);
-        if (_rotate)
-        {
-            _cercleAnimObj.transform.Rotate(Vector3.forward * (Time.deltaTime * _rotationAnimSpeed));
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                GameManager.Instance.ActualPlanete = this;
-                PlayerManager.Instance.Energie += _EnergieCost;
-                PlayerManager.Instance.Vie += _lifeCost;
-                GameManager.Instance.PlaneteView();
-                
+        if (playerIsNear) checkAndWaitForPlayerInput();
+    }
 
-            }
-        }
+    private void checkAndWaitForPlayerInput()
+    {
+        _cercleAnimObj.transform.Rotate(Vector3.forward * (Time.deltaTime * _rotationAnimSpeed));
+        if (Input.GetKeyDown(KeyCode.E)) goToThePlanete();
+    }
+
+    private void goToThePlanete()
+    {
+        GameManager.Instance.actualPlanete = this;
+        PlayerManager.Instance.Energie += _EnergieCost;
+        PlayerManager.Instance.Vie += _lifeCost;
+        GameManager.Instance.planeteView();
+
+        if (haveASpaceStation) tellWehaveASpaceStation();
 
     }
+
+    private void tellWehaveASpaceStation()
+    {
+        NotificationManager notificationManager = PlayerManager.Instance.notificationManager;
+        notificationManager.newNotification(NotificationType.INFORMATION, "Amelioration Disponible (F) !!");
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -65,7 +87,7 @@ public class planeteOrbit : MonoBehaviour
         {
             _cercleAnimObj.SetActive(true);
             _textInfo.SetActive(true);
-            _rotate = true;
+            playerIsNear = true;
         }
     }
 
@@ -76,7 +98,7 @@ public class planeteOrbit : MonoBehaviour
         {
             _cercleAnimObj.SetActive(false);
             _textInfo.SetActive(false);
-            _rotate = false;
+            playerIsNear = false;
         }
     }
 
@@ -92,6 +114,24 @@ public class planeteOrbit : MonoBehaviour
             turretInstancied.transform.SetParent(transform);
             turretInstancied.GetComponent<TurretAI>().planeteTransform = this.transform;
 
+        }
+    }
+
+    private void spaceStationInvokeTEst()
+    {
+        
+        int nbTirerAuSort = Random.Range(0, 100);
+        if (nbTirerAuSort < chanceDeInvokerUneSpaceStation)
+        {
+            GameObject spaceStationObj = (GameObject) Instantiate(spaceStationPrefab, 
+                new Vector3(transform.position.x + 2, transform.position.y + 2, transform.position.z),
+                Quaternion.identity);
+
+            spaceStationObj.transform.SetParent(transform);
+            haveASpaceStation = true;
+            
+            spaceStationObj.GetComponent<orbitMover>().setPlanetePosition(transform);
+            
         }
     }
 

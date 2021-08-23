@@ -14631,12 +14631,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4923957858404230}
-  - component: {fileID: 114960433178452790}
+  - component: {fileID: 4102093856307762283}
   - component: {fileID: 114660646102788534}
   - component: {fileID: 114642073701102404}
   - component: {fileID: 212419850576164182}
-  - component: {fileID: 61072580455120420}
   - component: {fileID: 50763816468549002}
+  - component: {fileID: 317865684288531205}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -14662,7 +14662,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114960433178452790
+--- !u!114 &4102093856307762283
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14671,12 +14671,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1510184446397956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb41f2cd4a34c640ab7314296953cc9, type: 3}
+  m_Script: {fileID: 11500000, guid: 06c2198b8808450997a8477280c7bec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camp: 0
   destructionFX: {fileID: 1587261729604890, guid: 600ec83cba1cec448bf41a6607229741,
     type: 3}
-  ennemiBulletTag: EnnemiProjectile
   timeToDie: 1.5
 --- !u!114 &114660646102788534
 MonoBehaviour:
@@ -14781,32 +14781,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &61072580455120420
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510184446397956}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.24, y: 1.35}
-    newSize: {x: 2.048, y: 2.048}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.59, y: 1.29}
-  m_EdgeRadius: 0
 --- !u!50 &50763816468549002
 Rigidbody2D:
   serializedVersion: 4
@@ -14828,6 +14802,63 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &317865684288531205
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510184446397956}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.24, y: 1.35}
+    newSize: {x: 2.048, y: 2.048}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.59, y: -0.48499998}
+      - {x: 0.62, y: -0.435}
+      - {x: 0.62, y: 0.235}
+      - {x: 0.59, y: 0.255}
+      - {x: 0.48999998, y: 0.305}
+      - {x: 0.41, y: 0.145}
+      - {x: 0.39999998, y: 0.345}
+      - {x: 0.37, y: 0.39499998}
+      - {x: 0.34, y: 0.42499998}
+      - {x: 0.29999998, y: 0.445}
+      - {x: 0.19, y: 0.45499998}
+      - {x: 0.12, y: 0.675}
+      - {x: -0.089999996, y: 0.675}
+      - {x: -0.13, y: 0.66499996}
+      - {x: -0.25, y: 0.435}
+      - {x: -0.35999998, y: 0.465}
+      - {x: -0.4126801, y: 0.21566269}
+      - {x: -0.45999998, y: 0.225}
+      - {x: -0.5, y: 0.285}
+      - {x: -0.62, y: 0.24499999}
+      - {x: -0.62, y: -0.435}
+      - {x: -0.59, y: -0.48499998}
+      - {x: -0.5, y: -0.505}
+      - {x: -0.4741211, y: -0.27724782}
+      - {x: -0.25, y: -0.465}
+      - {x: -0.16, y: -0.545}
+      - {x: -0.07, y: -0.66499996}
+      - {x: -0.06, y: -0.675}
+      - {x: 0.07, y: -0.675}
+      - {x: 0.25, y: -0.465}
+      - {x: 0.29, y: -0.265}
+      - {x: 0.51, y: -0.48499998}
 --- !u!1 &1511134553118932
 GameObject:
   m_ObjectHideFlags: 0

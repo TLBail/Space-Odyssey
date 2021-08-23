@@ -2,31 +2,29 @@
 using System.Collections.Generic;
 using System.Linq;
 using Script;
+using Script.Item_and_inventory;
 using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
 
     public static PlayerManager Instance { get; private set; }
-
-    public delegate void OnInventoryChange();
-    public OnInventoryChange OnInventoryChangeCallBack;
     
-    private Queue<AnimItem> inventoryAction = new Queue<AnimItem>();
-    [SerializeField] public GameObject animItemObj,animInventairPleinObj;
     [SerializeField] public Animation animSliderEnergie;
     [SerializeField] public Animation animSliderVie;
     public Item selectedItem;
     public SlotItemToMove SlotItemToMove;
-    public bool isOcuped = false;
     private bool IsOnAnimationInvantaire = false;
 
     public GameObject shipGameObject;
 
     
     public NotificationManager notificationManager;
+
+    private Inventaire inventaire;
     
     private void Awake()
     {
+        inventaire = gameObject.GetComponent<Inventaire>();
         if (Instance == null)
         {
             Instance = this;
@@ -51,12 +49,12 @@ public class PlayerManager : MonoBehaviour
 
             if (Vie <= 0)
             {
-                GameManager.Instance.GameOver();
+                GameManager.Instance.gameOver();
             }
 
             if (Energie <= 0)
             {
-                GameManager.Instance.GameOver();
+                GameManager.Instance.gameOver();
             }
         }
     }
@@ -68,12 +66,7 @@ public class PlayerManager : MonoBehaviour
         if (Energie < MaxEnergie)
         {
             Energie += fuel.amountOfFuel;
-            RemoveItem(fuel);
-        
-            /*
-            Debug.Log("Plus de Carburant");
-            notificationManager.newNotification(NotificationType.INFORMATION, "plus de carburant a disposition");
-            */
+            inventaire.removeItem(fuel);
         }
         else
         {
@@ -89,7 +82,7 @@ public class PlayerManager : MonoBehaviour
         if (Vie < MaxVie)
         {
             Vie += coque.amoutOfVie;
-            RemoveItem(coque);
+            inventaire.removeItem(coque);
         }
         else
         {
@@ -97,49 +90,6 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    
-    
-    private GameObject objtoDelete;
-    public bool AddItem(Item item)
-    {
-        if (Inventaire.Count >= MaxItemSpace)
-        {
-            notificationManager.newNotification(NotificationType.INVENTAIREPLEIN);
-            return false;
-        }
-        else
-        {
-            Inventaire.Add(item);
-            
-            notificationManager.newNotification(new AnimItem(item, true));
-            OnInventoryChangeCallBack?.Invoke();
-            return true;
-
-        }
-    }
-
-    public bool RemoveItem(Item item)
-    {
-        if (Inventaire.Find((itema) => itema.name == item.name))
-        {
-            Debug.Log("Supression de " + item.name);
-            Item oldItem = ScriptableObject.CreateInstance<Item>();
-            oldItem.name = item.name;
-            oldItem.icon = item.icon;
-            
-            notificationManager.newNotification(new AnimItem(oldItem, false));
-
-            Inventaire.Remove(item);
-            OnInventoryChangeCallBack?.Invoke();
-            return true;
-        }
-        else
-        {
-            Debug.Log("Echec de la supresssion de l'objet");
-            return false;
-
-        }
-    }
     
     [Header("Player Carcateristique")]
     public float Vie;
@@ -149,9 +99,5 @@ public class PlayerManager : MonoBehaviour
     public float Energie;
     public float MaxEnergie;
     public float EnergieInit;
-    [Space(10)]
-    public List<Item> Inventaire;
-    public int MaxItemSpace;
-    public List<Amelioration> purchasedAmeliorations;
 
 }

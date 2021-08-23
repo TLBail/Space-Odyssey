@@ -99,6 +99,7 @@ public class PlayerShooting : MonoBehaviour {
     void CreateLazerShot(GameObject lazer, Vector3 pos, Vector3 rot) //translating 'pooled' lazer shot to the defined position in the defined rotation
     {
 
+        rot.z = rot.z + 90;
         if(shootPool.Any((obji) => obji.activeInHierarchy == false)){
 
             GameObject obja = shootPool.Find((objo) => objo.activeInHierarchy == false);

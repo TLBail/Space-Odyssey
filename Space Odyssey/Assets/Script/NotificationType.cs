@@ -6,6 +6,7 @@
         DELETINGITEM,
         INVENTAIREPLEIN,
         INFORMATION,
-        WARNING
+        WARNING,
+        TEXT
     }
 }

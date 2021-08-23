@@ -20,6 +20,6 @@ public class NextSystem : MonoBehaviour
     private void Next()
     {
         _particleFTl.SetActive(false);
-        GameManager.Instance.BackToGalaxyView();
+        GameManager.Instance.backToGalaxyView();
     }
 }

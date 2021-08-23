@@ -1,18 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Comparers;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class StarPath : MonoBehaviour
 {
     [SerializeField] public float _numberOfSystem, _nombreDePlaneteMin, _nombreDePlaneteMax;
-    [FormerlySerializedAs("_OrbitXmin")] [SerializeField] public float orbitXmin;
-    [SerializeField] public float _OrbitXmax, _OrbitYmin, _OrbitYmax;
+    [SerializeField] public float orbitmax, orbitmin;
     [SerializeField] public List<PlaneteSystem> planeteSystemsList = new List<PlaneteSystem>();
     [SerializeField] private GameObject[] _planeteBank;
     [SerializeField] private GameObject _stars, finalStars, main, transitionObject;
 
-    
+    const int ZPOSITIONPLANETE = 22;
     
     public void NewGameNewSystem()
     {
@@ -29,18 +30,30 @@ public class StarPath : MonoBehaviour
 
             for (int i = 0; i < planeteNombre; i++)
             {
-                GameObject obj;
+                GameObject planeteGOBJ;
                 do
                 {
-                    obj = _planeteBank[Random.Range(0, _planeteBank.Length)];
-                } while (planeteSystemsList[x].PlaneteList.Contains(obj));
-                
-                obj.transform.position = new Vector3(Random.Range(orbitXmin, _OrbitXmax), Random.Range(_OrbitYmin , _OrbitYmax), 23);
-                planeteSystemsList[x].PlaneteList.Add(obj);
+                    planeteGOBJ = _planeteBank[Random.Range(0, _planeteBank.Length)];
+                } while (planeteSystemsList[x].PlaneteList.Contains(planeteGOBJ));
+                planeteGOBJ.transform.position = newPlanetePosition();
+                planeteSystemsList[x].PlaneteList.Add(planeteGOBJ);
             }
 
         }
     }
+
+
+    private Vector3 newPlanetePosition()
+    {
+        Vector3 vector3;
+        vector3 =  new Vector3(Random.Range(orbitmin, orbitmax), Random.Range(orbitmin , orbitmax), ZPOSITIONPLANETE);
+        int min = 0;
+        int max = 2;
+        if (Random.Range(min, max) == 1) vector3.x = -vector3.x;
+        if (Random.Range(min, max) == 1) vector3.y = -vector3.y;
+        return vector3;
+    }
+    
 
     public void DisplayNewSystem()
     {
@@ -55,8 +68,6 @@ public class StarPath : MonoBehaviour
             obj.GetComponent<StarClick>().CoutCarbu = (int)Random.Range(PlayerManager.Instance.MaxEnergie/4 , PlayerManager.Instance.MaxEnergie);
             obj.GetComponent<StarClick>().main = main;
             obj.GetComponent<StarClick>().transitionObject = transitionObject;
-            Debug.Log(obj.GetComponent<StarClick>().main);
-            Debug.Log(obj.GetComponent<StarClick>().transitionObject);
         }
         posx += Random.Range(5, 15);
         posy += Random.Range(-5, -2);

@@ -10,7 +10,7 @@ public class exoGroundController : MonoBehaviour
     
     private void OnEnable()
     {
-        BackgroundSp.sprite = GameManager.Instance.ActualPlanete.groundSprite;
+        BackgroundSp.sprite = GameManager.Instance.actualPlanete.groundSprite;
 
     }
 

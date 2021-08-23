@@ -93,60 +93,77 @@
             </e>
           </e>
         </e>
-        <e p="BossAi.cs" t="Include" />
-        <e p="BulletAi.cs" t="Include" />
-        <e p="ConsomableSlot.cs" t="Include" />
-        <e p="CoqueBar.cs" t="Include" />
-        <e p="FuelBar.cs" t="Include" />
-        <e p="GameManager.cs" t="Include" />
-        <e p="guidedBulletAi.cs" t="Include" />
-        <e p="InventaireViewManager.cs" t="Include" />
-        <e p="InventorySlot.cs" t="Include" />
-        <e p="InventoryUI.cs" t="Include" />
-        <e p="Item" t="Include">
-          <e p="Animation" t="Include">
-            <e p="AnimObjScript.cs" t="Include" />
+        <e p="OBJECT" t="Include">
+          <e p="Item" t="Include">
+            <e p="Animation" t="Include">
+              <e p="AnimObjScript.cs" t="Include" />
+            </e>
+            <e p="Fuel.cs" t="Include" />
+            <e p="Item.cs" t="Include" />
+            <e p="Metal.cs" t="Include" />
+            <e p="old system" t="Include">
+              <e p="InventaireRender.cs" t="Include" />
+              <e p="ItemOLd.cs" t="Include" />
+            </e>
           </e>
-          <e p="Fuel.cs" t="Include" />
-          <e p="Item.cs" t="Include" />
-          <e p="Metal.cs" t="Include" />
-          <e p="old system" t="Include">
-            <e p="InventaireRender.cs" t="Include" />
-            <e p="ItemOLd.cs" t="Include" />
+          <e p="node amélioration" t="Include">
+            <e p="Amelioration.cs" t="Include" />
           </e>
         </e>
-        <e p="MiningOperation.cs" t="Include" />
-        <e p="node amélioration" t="Include">
-          <e p="Amelioration.cs" t="Include" />
-        </e>
-        <e p="nodeAi.cs" t="Include" />
-        <e p="nodeManager.cs" t="Include" />
-        <e p="objetStore.cs" t="Include" />
         <e p="Script" t="Include">
+          <e p="AmeliorationManager.cs" t="Include" />
           <e p="AnimItem.cs" t="Include" />
+          <e p="BossAi.cs" t="Include" />
+          <e p="bullet and projectile" t="Include">
+            <e p="BasicProjectile.cs" t="Include" />
+            <e p="GuidedProjectile.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="Projectile.cs" t="Include" />
+            <e p="Shootable.cs" t="Include" />
+          </e>
+          <e p="BulletAi.cs" t="Include" />
           <e p="cameraManager.cs" t="Include" />
+          <e p="ConsomableSlot.cs" t="Include" />
+          <e p="CoqueBar.cs" t="Include" />
           <e p="exoGroundController.cs" t="Include" />
+          <e p="FuelBar.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="gameOver.cs" t="Include" />
+          <e p="guidedBulletAi.cs" t="Include" />
+          <e p="Hide.cs" t="Include" />
+          <e p="InventaireViewManager.cs" t="Include" />
+          <e p="InventorySlot.cs" t="Include" />
+          <e p="InventoryUI.cs" t="Include" />
+          <e p="Item and inventory" t="Include">
+            <e p="AnimItems.cs" t="Include" />
+            <e p="Inventaire.cs" t="Include" />
+          </e>
+          <e p="menuManager.cs" t="Include" />
+          <e p="MiningOperation.cs" t="Include" />
           <e p="MovableCamera.cs" t="Include" />
           <e p="NextSystem.cs" t="Include" />
+          <e p="nodeAi.cs" t="Include" />
+          <e p="nodeManager.cs" t="Include" />
           <e p="NotificationManager.cs" t="Include" />
           <e p="notificationType.cs" t="Include" />
+          <e p="objetStore.cs" t="Include" />
+          <e p="orbitMover.cs" t="Include" />
           <e p="planeteOrbit.cs" t="Include" />
           <e p="PlayerManager.cs" t="Include" />
+          <e p="setInactiveOnAwake.cs" t="Include" />
+          <e p="shieldManager.cs" t="Include" />
+          <e p="SlotItemToMove.cs" t="Include" />
+          <e p="SondageOperation.cs" t="Include" />
           <e p="StarClick.cs" t="Include" />
           <e p="StarPath.cs" t="Include" />
+          <e p="StoryGenerator.cs" t="Include" />
+          <e p="SystemSelector.cs" t="Include" />
+          <e p="TurretAI.cs" t="Include" />
+          <e p="tutoEnabeler.cs" t="Include" />
           <e p="UImanager.cs" t="Include" />
+          <e p="Victoire.cs" t="Include" />
+          <e p="wingScript.cs" t="Include" />
         </e>
-        <e p="setInactiveOnAwake.cs" t="Include" />
-        <e p="shieldManager.cs" t="Include" />
-        <e p="SlotItemToMove.cs" t="Include" />
-        <e p="SondageOperation.cs" t="Include" />
-        <e p="StoryGenerator.cs" t="Include" />
-        <e p="SystemSelector.cs" t="Include" />
-        <e p="TurretAI.cs" t="Include" />
-        <e p="tutoEnabeler.cs" t="Include" />
-        <e p="Victoire.cs" t="Include" />
-        <e p="wingScript.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

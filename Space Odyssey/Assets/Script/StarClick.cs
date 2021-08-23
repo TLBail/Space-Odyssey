@@ -19,7 +19,7 @@ public class StarClick : MonoBehaviour
     
     private void Start()
     {
-         _sprite = GetComponent<SpriteRenderer>();
+         _sprite =  GetComponentInChildren<SpriteRenderer>();
          _text = textInfo.GetComponent<TextMeshPro>();
          _text.text =  pretextCout + CoutCarbu;
          WarningObj = GameManager.Instance.WarningObj;
@@ -31,7 +31,7 @@ public class StarClick : MonoBehaviour
     {
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (GameManager.Instance.ActualSystemIndex == SystemIndex)
+        if (GameManager.Instance.actualSystemIndex == SystemIndex)
         {
             _text.text = "Retour";
             if (Physics.Raycast(ray, out var hit) && hit.transform == transform)
@@ -41,7 +41,7 @@ public class StarClick : MonoBehaviour
                 _sprite.color = Color.yellow;
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GameManager.Instance.BackToSystemView();
+                    GameManager.Instance.backToSystemView();
                 }
             }
             else
@@ -50,7 +50,7 @@ public class StarClick : MonoBehaviour
                 textInfo.SetActive(false);
                 _sprite.color = Color.green;
             }
-        }else if(GameManager.Instance.ActualSystemIndex + 1 == SystemIndex)
+        }else if(GameManager.Instance.actualSystemIndex + 1 == SystemIndex)
         {
 
             _text.text = pretextCout + CoutCarbu;
@@ -62,9 +62,9 @@ public class StarClick : MonoBehaviour
                 {
                     if (TestCarbu())
                     {
-                        if ((int) GameManager.Instance._starPath._numberOfSystem == GameManager.Instance.ActualSystemIndex + 1)   // on fait + 1 parce que actual index par encore incrementer on l'incremente juste en desssous
+                        if ((int) GameManager.Instance.starPath._numberOfSystem == GameManager.Instance.actualSystemIndex + 1)   // on fait + 1 parce que actual index par encore incrementer on l'incremente juste en desssous
                         {
-                            GameManager.Instance.Victoire();
+                            GameManager.Instance.victoire();
 
                         }
                         else
@@ -85,7 +85,7 @@ public class StarClick : MonoBehaviour
                 textInfo.SetActive(false);
                 _sprite.color = Color.white;
             }
-        }else if (GameManager.Instance.ActualSystemIndex - 1 == SystemIndex)
+        }else if (GameManager.Instance.actualSystemIndex - 1 == SystemIndex)
         {
             _text.text = pretextCout + CoutCarbu;
             if (Physics.Raycast(ray, out var hit) && hit.transform == transform)
@@ -120,16 +120,19 @@ public class StarClick : MonoBehaviour
 
 
 
-    private Boolean TestCarbu() => PlayerManager.Instance.Energie >= CoutCarbu;
+    private Boolean TestCarbu() => PlayerManager.Instance.Energie > CoutCarbu;
 
 
     private void GOToNextSystem(int systemIndex)
     {
-        GameManager.Instance.ActualSystemIndex = systemIndex;
+        GameManager.Instance.actualSystemIndex = systemIndex;
         PlayerManager.Instance.Energie -= CoutCarbu;
         
         main.SetActive(false);
         transitionObject.SetActive(true);
+        Camera.main.gameObject.GetComponent<MovableCamera>()?.resetCamera();
+        Camera.main.gameObject.GetComponent<MovableCamera>().movementIsActivated = false;
+        
     }
     
 

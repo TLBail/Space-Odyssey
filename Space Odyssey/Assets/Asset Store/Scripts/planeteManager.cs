@@ -12,7 +12,7 @@ public class planeteManager : MonoBehaviour
     private void OnEnable()
     {
 
-        planeteOrbit planeteOrbit = GameManager.Instance.ActualPlanete;
+        planeteOrbit planeteOrbit = GameManager.Instance.actualPlanete;
         
         _imageBackground.sprite = planeteOrbit.planeteSprite;
         
