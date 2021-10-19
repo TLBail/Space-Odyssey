@@ -5,7 +5,7 @@ la dernière realase est dans le dossier release du dépot ( c faux github veut 
 
 ducoup clique là https://developer.cloud.unity3d.com/share/share.html?shareId=-kG2-FGbLP
 
-vous pouvez jouer aussi SUR VOTRE NAVIGATEUR ( c fou ) en cliquant ici https://developer.cloud.unity3d.com/share/share.html?shareId=WyTmaiGZ8w pensez a mettre en dimension other puis 1920 par 1080 
+vous pouvez jouer aussi SUR VOTRE NAVIGATEUR ( c fou ) en cliquant ici https://developer.cloud.unity3d.com/share/share.html?shareId=ZyATPSwT_P pensez a mettre en dimension other puis 1920 par 1080 
 
 le jeu est grandement inspiré de "Out there" (très bon jeu au passage).
 
